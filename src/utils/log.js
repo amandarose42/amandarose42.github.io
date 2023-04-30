@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, logEvent, isSupported } from 'firebase/analytics';
 
-const firebaseConfig = {
+/* const firebaseConfig = {
   apiKey: '',
   authDomain: '',
   projectId: '',
@@ -19,4 +19,4 @@ const analytics = isGaSupported ? getAnalytics(app) : null;
 
 export const logGa = (eventName, eventParams = {}) => {
   isGaSupported ? logEvent(analytics, eventName, eventParams) : console.log(eventName, eventParams);
-};
+}; */
