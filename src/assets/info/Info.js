@@ -2,26 +2,26 @@ import self from '../img/self.png';
 import { colors } from '../colors/mainGradient';
 
 export const info = {
-  firstName: 'Andy',
-  lastName: 'Luo',
-  initials: 'AL', // the example uses first and last, but feel free to use three or more if you like.
-  position: 'a Full Stack Developer',
+  firstName: 'Amanda',
+  lastName: 'Ortiz',
+  initials: 'ARO', // the example uses first and last, but feel free to use three or more if you like.
+  position: 'a Software Developer',
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
   miniBio: [
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
-      emoji: '🇨🇦',
-      text: 'based in the Toronto, Canada',
+      emoji: '🇺🇸',
+      text: 'based in the Arcata, CA',
     },
     {
       emoji: '💻',
-      text: 'Full Stack Developer at commonsku',
+      text: 'Pursuing Full Stack Development',
     },
     {
       emoji: '📧',
-      text: 'andy8647lgc@gmail.com',
+      text: 'amandaroseortiz42@gmail.com',
     },
   ],
   socials: [
@@ -31,76 +31,61 @@ export const info = {
       label: 'resume',
     },
     {
-      link: 'https://instagram.com/andy_lgc?igshid=YmMyMTA2M2Y=',
+      link: 'https://instagram.com/amanda.rose42/',
       icon: 'fa fa-instagram',
       label: 'instagram',
     },
     {
-      link: 'https://github.com/Andy8647',
+      link: 'https://github.com/amandarose42',
       icon: 'fa fa-github',
       label: 'github',
     },
     {
-      link: 'https://www.linkedin.com/in/gancheng-luo-andy/',
+      link: 'https://www.linkedin.com/in/amandaroseortiz/',
       icon: 'fa fa-linkedin',
       label: 'linkedin',
     },
     {
-      link: 'https://twitter.com/Andy8647L',
+      link: 'https://twitter.com/amanda_rose42',
       icon: 'fa fa-twitter',
       label: 'twitter',
     },
   ],
-  bio: "Hello! I'm Gancheng (Andy) Luo. I'm a Full Stack Developer. I studied CompSci at UofT, I enjoy building web applications and learning new technologies. I'm currently working at commonsku as a Full Stack Developer. I'm also a freelance photographer. I love to travel and explore new places. I'm currently based in Toronto, Canada.",
+  bio: "Hello! I'm Amanda Ortiz! I studied Computer Science at Humboldt State University. Currently, I am working as an Operations Manager at the Ramada Inn Arcata, but my main goal is to pursue a career in Software Development. I have had previous experience as a Full Stack Developer. I enjoy building web applications and learning new technologies. I'm currently based in Arcata, California, but am planning to relocate to Minnesota, USA.",
   skills: {
     // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
     // but the structure should be the same, an array of strings and the key should be one word, no spaces.
-    languages: ['TypeScript', 'JavaScript', 'Java', 'PHP', 'Python', 'HTML/CSS'],
+    languages: ['Javascript', 'Python', 'C++', 'Introductory Linux & Java', 'HTML/CSS', 'PHP'],
     frameworks: [
-      'React',
-      'Redux',
+      'React','React Native',
+      'Next',
       'Material UI',
       'Vue',
-      'Express',
-      'NestJS',
-      'Spring Boot',
-      'Bootstrap/jQuery',
-      'Zend',
-      'Django',
+      'NodeJS'
     ],
-    databases: ['MySQl', 'MongoDB', 'PostgreSQL', 'Mybatis', 'TypeORM'],
-    cloudServices: ['AWS S3', 'AWS EC2', 'AWS SNS', 'Google Analytics', 'Heroku', 'Netlify'],
+    databases: ['MySQL', 'NoSQL', 'PostgreSQL', 'MongoDB', 'DynamoDB', 'GraphQL'],
+    cloudServices: ['AWS S3', 'AWS EC2', 'Google Analytics', 'Heroku'],
     tools: [
+      'Visual Studio',
       'Git',
       'Postman',
-      'Docker',
-      'Swagger',
-      'Elasticsearch',
+      'AWS',
       'npm',
-      'yarn',
-      'Maven',
-      'Jenkins',
-      'Jira',
-      'Confluence',
-      'Bitbucket',
+      'yarn'
     ],
   },
   hobbies: [
     {
-      label: 'Photography',
-      emoji: '📷',
+      label: 'Language Learning',
+      emoji: '🌐',
     },
     {
-      label: 'Video Games',
-      emoji: '🎮',
+      label: 'Beach Walks',
+      emoji: '🐋',
     },
     {
-      label: 'Guitar',
-      emoji: '🎸',
-    },
-    {
-      label: 'Anime',
-      emoji: '🎞',
+      label: 'Hiking',
+      emoji: '🌲',
     },
     {
       label: 'Cooking',
@@ -111,8 +96,8 @@ export const info = {
       emoji: '✈️',
     },
     {
-      label: 'Fishing',
-      emoji: '🎣',
+      label: 'Video Games',
+      emoji: '🎮',
     },
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
@@ -121,14 +106,14 @@ export const info = {
     // This is where your portfolio projects will be detailed
     //   for the null ones, the button will not show up
     {
-      title: 'CryptoGoGo - Online Cryptocurrency Community and Trading platform',
+      title: 'Lumber Data Tracking',
       live: null, //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: 'https://github.com/Andy8647/CryptoGoGo', // this should be a link to the **repository** of the project, where the code is hosted.
       image: 'https://i.ibb.co/6BsWs6f/01.jpg',
     },
     {
-      title: 'Dynrank.js - High-performance dynamic bar chart visualization library',
-      live: null,
+      title: 'MapIt Humboldt: Bias Reporting',
+      live: 'https://www.mapithumboldt.org',
       source: 'https://github.com/Andy8647/dynrank',
       image: 'https://i.ibb.co/HFkMKtH/02.jpg',
     },
