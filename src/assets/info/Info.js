@@ -112,8 +112,8 @@ export const info = {
       image: 'https://i.ibb.co/6BsWs6f/01.jpg',
     },
     {
-      title: 'Dynrank.js - High-performance dynamic bar chart visualization library',
-      live: null,
+      title: 'MapIt Humboldt: Bias Reporting',
+      live: 'https://www.mapithumboldt.org',
       source: 'https://github.com/Andy8647/dynrank',
       image: 'https://i.ibb.co/HFkMKtH/02.jpg',
     },
