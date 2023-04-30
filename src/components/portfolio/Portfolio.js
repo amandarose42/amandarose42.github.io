@@ -12,6 +12,7 @@ export default function Portfolio() {
             <PortfolioBlock
               image={project.image}
               live={project.live}
+              description={project.description}
               source={project.source}
               title={project.title}
             />
