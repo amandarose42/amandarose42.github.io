@@ -1,5 +1,4 @@
 import React from 'react'
-import SinglePageViewer from './load-resume'
 //import myresume from '/2023-updated-resume.pdf'
 
 import './styles.css'
@@ -7,12 +6,11 @@ import './styles.css'
 function Resume() {
   return (
     <div className="App">
-
-      <h4>All Pages</h4>
       <div className="all-page-container">
-        <SinglePageViewer pdf={'/2023-updated-resume.pdf'} />
+      <object data={"./2023-updated-resume.pdf"} type="application/pdf" width="75%" height="700px">
+      <p>Alternative text - include a link <a href={"./2023-updated-resume.pdf"}>to the PDF!</a></p>
+      </object>
       </div>
-
     </div>
   )
 }
