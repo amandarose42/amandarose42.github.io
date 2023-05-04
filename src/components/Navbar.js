@@ -7,6 +7,12 @@ import { info } from '../assets/info/Info';
 
 const links = [
   {
+    name: info.initials,
+    type: 'initials',
+    to: '/',
+    active: 'home',
+  },
+  {
     name: 'Home',
     to: '/',
     active: 'home',
@@ -17,15 +23,14 @@ const links = [
     active: 'about',
   },
   {
-    name: info.initials,
-    type: 'initials',
-    to: '/',
-    active: 'home',
-  },
-  {
     name: 'Portfolio',
     to: '/portfolio',
     active: 'portfolio',
+  },
+  {
+    name: 'Resume',
+    to: '/resume',
+    active: 'resume',
   },
 ];
 
