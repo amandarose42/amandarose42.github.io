@@ -7,6 +7,7 @@ import Portfolio from './portfolio/Portfolio';
 import { Route, Routes } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
 import ParticlesBg from './particles/ParticlesBg';
+import Resume from './resume/resume';
 //import { logGa } from '../utils/log';
 
 export default function BaseLayout() {
@@ -58,6 +59,7 @@ export default function BaseLayout() {
             <Route exact path={'/'} element={<Home darkMode={darkMode} />} />
             <Route exact path={'/about'} element={<About />} />
             <Route exact path={'/portfolio'} element={<Portfolio />} />
+            <Route exact path={'/resume'} element={<Resume />} />
           </Routes>
         </Grid>
         <Grid item>
@@ -66,7 +68,7 @@ export default function BaseLayout() {
             display={'flex'}
             flexDirection={'column'}
             alignItems={'center'}
-            py={'1.5rem'}
+            py={'0.5rem'}
             sx={{ opacity: 0.7 }}
             width={'100%'}
           >

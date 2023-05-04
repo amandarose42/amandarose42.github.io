@@ -26,7 +26,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'https://aroseo.com/2023-updated-resume.pdf', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://aroseo.com/resume', // this should be https://yourname.com/resume.pdf once you've deployed
       icon: 'fa fa-file',
       label: 'resume',
     },
@@ -105,12 +105,12 @@ export const info = {
   portfolio: [
     // This is where your portfolio projects will be detailed
     //   for the null ones, the button will not show up
-    {
+   /*  {
       title: 'Lumber Data Tracking',
       description:'',
       live: null, //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: 'https://github.com/Andy8647/CryptoGoGo', // this should be a link to the **repository** of the project, where the code is hosted.
-      image: 'https://i.ibb.co/6BsWs6f/01.jpg',
+      source: '', // this should be a link to the **repository** of the project, where the code is hosted.
+      image: '',
     },
     {
       title: 'MapIt Humboldt: Bias Reporting',
@@ -118,6 +118,6 @@ export const info = {
       live: '', //https://www.mapithumboldt.org
       source: '', //https://github.com/Andy8647/dynrank
       image: './mapit-screenshots.png',
-    },
+    }, */
   ],
 };
