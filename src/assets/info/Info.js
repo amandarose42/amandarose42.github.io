@@ -26,7 +26,7 @@ export const info = {
   ],
   socials: [
     {
-      link: 'https://aroseo.com/resume', // this should be https://yourname.com/resume.pdf once you've deployed
+      link: 'https://www.aroseo.com/resume', // this should be https://yourname.com/resume.pdf once you've deployed
       icon: 'fa fa-file',
       label: 'resume',
     },
