@@ -65,7 +65,7 @@ export default function Home({ darkMode }) {
         <Box
           display={'flex'}
           gap={'1.5rem'}
-          justifyContent={'center'}
+          justifyContent={'space-around'}
           fontSize={{ xs: '2rem', md: '2.5rem' }}
         >
           {info.socials.map((social, index) => (
