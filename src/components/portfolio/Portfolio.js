@@ -15,6 +15,7 @@ export default function Portfolio() {
               description={project.description}
               source={project.source}
               title={project.title}
+              noButtons={project.noButtons}
             />
           </Grid>
         ))}
