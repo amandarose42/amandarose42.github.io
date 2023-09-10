@@ -46,7 +46,7 @@ export const info = {
       label: 'twitter',
     },
   ],
-  bio: "Hello! I'm Amanda Ortiz! I studied Computer Science at Humboldt State University. Currently, I am working as an Operations Manager at the Ramada Inn Arcata, but my main goal is to pursue a career in Software Development. I have had previous experience as a Full Stack Developer. I enjoy building web applications and learning new technologies. I'm currently based in Arcata, California, but am planning to relocate to Minnesota, USA.",
+  bio: "Hello! I'm Amanda Ortiz! I studied Computer Science at Humboldt State University. Currently, I am working as an Operations Manager at the Ramada Inn Arcata, but my main goal is to pursue a career in Software Development. I have had previous experience as a Full Stack Developer. I enjoy building web applications and learning new technologies. I'm currently based in Arcata, California.",
   skills: {
     // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
     // but the structure should be the same, an array of strings and the key should be one word, no spaces.
