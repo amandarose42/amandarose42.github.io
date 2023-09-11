@@ -115,8 +115,8 @@ export const info = {
       image: './mapit-screenshots.png',
     }, */
     {
-      title: 'SRMs OBOX',
-      description: "A vanilla javascript project that created a publicly shared file structure system, similar to Window's File Explorer, to allow the SRM team to share important documents that are consistently updated, as well as customize the file structures to their personal needs. Created a bash script that users can double click on to update the file structure and upload new documents.",
+      title: 'Knowledge Base for Biztech',
+      description: "Local machine setup on the office network that ran a website that consists of all necessary information for current and previous projects in the Development Department",
       image: 'n/a',
       noButtons: true
     },
@@ -139,8 +139,8 @@ export const info = {
       noButtons: true
     },
     {
-      title: 'Knowledge Base for Biztech',
-      description: "Local machine setup on the office network that ran a website that consists of all necessary information for current and previous projects in the Development Department",
+      title: 'SRMs OBOX',
+      description: "A vanilla javascript project that created a publicly shared file structure system, similar to Window's File Explorer, to allow the SRM team to share important documents that are consistently updated, as well as customize the file structures to their personal needs. Created a bash script that users can double click on to update the file structure and upload new documents.",
       image: 'n/a',
       noButtons: true
     },
