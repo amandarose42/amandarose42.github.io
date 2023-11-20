@@ -44,3 +44,26 @@ i {
     color: #00a47f;
   }
 }
+
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0;
+  }
+  25%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.focusStuff:focus{
+  outline: 0
+}
+

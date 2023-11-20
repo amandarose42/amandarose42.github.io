@@ -5,7 +5,7 @@ export const info = {
   firstName: 'Amanda',
   lastName: 'Ortiz',
   initials: 'ARO', // the example uses first and last, but feel free to use three or more if you like.
-  position: 'a Software Developer',
+  position: 'a Software Developer/Network Technician',
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -13,7 +13,7 @@ export const info = {
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: '🇺🇸',
-      text: 'based in the Arcata, CA',
+      text: 'based in the Staples, MN',
     },
     {
       emoji: '💻',
@@ -46,14 +46,16 @@ export const info = {
       label: 'twitter',
     },
   ],
-  bio: "Hello! I'm Amanda Ortiz! I studied Computer Science at Humboldt State University. Currently, I am working as an Operations Manager at the Ramada Inn Arcata, but my main goal is to pursue a career in Software Development. I have had previous experience as a Full Stack Developer. I enjoy building web applications and learning new technologies. I'm currently based in Arcata, California.",
+  bio: `Hello! I'm Amanda Ortiz. I studied Computer Science at Cal Poly Humboldt and graduated in December of 2020. Currently, I am working 
+    as a Network Technician I at Wadena County Courthouse. My main goal is to pursue a career in Software Development. I have previous experience as
+    a FullStack Developer, working at Biztech. I enjoy building applications and learning new things and technologies. I recently relocated from Arcata, CA to Staples, MN.`,
   skills: {
     // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
     // but the structure should be the same, an array of strings and the key should be one word, no spaces.
     languages: ['Javascript', 'Python', 'C++', 'Introductory Linux & Java', 'HTML/CSS', 'PHP'],
     frameworks: [
       'React','React Native',
-      'Next',
+      'NextJS',
       'Material UI',
       'Vue',
       'NodeJS'
@@ -71,16 +73,12 @@ export const info = {
   },
   hobbies: [
     {
-      label: 'Language Learning',
+      label: 'Language Learning, Currently learning Norwegian',
       emoji: '🌐',
     },
     {
-      label: 'Beach Walks',
-      emoji: '🐋',
-    },
-    {
-      label: 'Hiking',
-      emoji: '🌲',
+      label: 'Reading Books, Currently reading ACOTAR Series (Book 3)',
+      emoji: '📖',
     },
     {
       label: 'Cooking',
@@ -94,6 +92,14 @@ export const info = {
       label: 'Video Games',
       emoji: '🎮',
     },
+    {
+      label: 'Beach Walks',
+      emoji: '🐋',
+    },
+    {
+      label: 'Hiking',
+      emoji: '🌲',
+    },
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
   ],
@@ -106,14 +112,7 @@ export const info = {
       live: null, //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: '', // this should be a link to the **repository** of the project, where the code is hosted.
       image: '',
-    },
-    {
-      title: 'MapIt Humboldt: Bias Reporting',
-      description:'The MapIt Humboldt Mobile App & Website allows members of the community to report and identify places that are welcoming and safe as well as places where people reported not feeling safe.',
-      live: '', //https://www.mapithumboldt.org
-      source: '', //https://github.com/Andy8647/dynrank
-      image: './mapit-screenshots.png',
-    }, */
+    },*/
     {
       title: 'Knowledge Base for Biztech',
       description: "Local machine setup on the office network that ran a website that consists of all necessary information for current and previous projects in the Development Department",
@@ -125,12 +124,20 @@ export const info = {
       description: "Basic React Site, hosted on Amplify, for Arcata Hotel Employees to have access to special rates, do not rent list, and a cleaning list. People on the do not rent list can be added, removed, and updated.",
       image: 'n/a',
       noButtons: true
-    },
+    },/*
     {
-      title: 'Map IT Humboldt',
+      title: 'MapIt Humboldt: Bias Reporting',
+      description:'The MapIt Humboldt Mobile App & Website allows members of the community to report and identify places that are welcoming and safe as well as places where people reported not feeling safe.',
+       live: '', //https://www.mapithumboldt.org
+      source: '', //https://github.com/Andy8647/dynrank
+      image: './mapit-screenshots.png',
+    },  */
+    {
+      title: 'Map IT Humboldt: Bias Reporting',
       description: "Included One Public Website, An Admin Site, and A Mobile Application. The Public Website was created using WordPress on LightSail and React for the forms. The Mobile app was created in React Native and added to both Google Play Store and Apple Store. Both the mobile application and the public website were created allow the community to view previous reported submissions and report their own submissions on bias and discrimination happening in Humboldt County. The Admin Site was created using React and hosted on Amplify, and is used for allowing admins of the group to view submissions from the public, and verify/deny those submissions by connecting with any local businesses involved.",
       image: 'n/a',
-      noButtons: true
+      noButtons: true,
+      //image: './mapit-screenshots.png'
     },
     {
       title: 'North Fork Lumber Saw Data Collection',
