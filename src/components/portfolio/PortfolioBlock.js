@@ -23,11 +23,14 @@ function PortfolioBlock(props) {
               '  0 22.3px 17.9px rgba(0, 0, 0, 0.072),\n' +
               '  0 41.8px 33.4px rgba(0, 0, 0, 0.086),\n' +
               '  0 100px 80px rgba(0, 0, 0, 0.12)',
+          marginBottom: "15px"
       }}
   />}
       <h1 style={{ fontSize: '2rem' }}>{title}</h1>
       <p style={{fontSize: '1rem'}}>{description}</p>
-      <Box
+      {
+        live || source
+        ? <Box
         className={'portfolio'}
         display={'flex'}
         flexDirection={'row'}
@@ -48,6 +51,8 @@ function PortfolioBlock(props) {
           </Box>
         )}
       </Box>
+      :""
+      }
     </Box>
   );
 }

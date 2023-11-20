@@ -3,7 +3,7 @@ import Style from './About.module.scss';
 import Terminal from './Terminal';
 import { Box } from '@mui/material';
 import { info } from '../../assets/info/Info';
-
+import CustomTerminal from './CustomTerminal'
 export default function About() {
   const firstName = info.firstName.toLowerCase();
 
@@ -98,9 +98,10 @@ export default function About() {
 
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-      <Terminal text={aboutMeText()} />
+      <CustomTerminal />
+      {/* <Terminal text={aboutMeText()} />
       <Terminal text={skillsText()} />
-      <Terminal text={miscText()} />
+      <Terminal text={miscText()} /> */}
     </Box>
   );
 }
