@@ -35,7 +35,7 @@ const ParticlesBg = ({ darkMode }) => {
             value: backgroundColor,
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 30,
         fullScreen: {
           enable: true,
           zIndex: -1,
@@ -65,7 +65,7 @@ const ParticlesBg = ({ darkMode }) => {
             },
             repulse: {
               distance: 150,
-              duration: 0.4,
+              duration: 0.8,
             },
           },
         },

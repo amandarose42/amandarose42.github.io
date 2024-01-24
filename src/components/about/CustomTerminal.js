@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import Style from './Terminal.module.scss';
 import classNames from 'classnames';
-import { Box } from '@mui/material';
+import { Box, Tooltip } from '@mui/material';
 import { info } from '../../assets/info/Info';
 
 const iconClass = 'fa fa-circle';
@@ -17,12 +17,13 @@ export default function CustomTerminal ({whichWindow}) {
     
     const termOptions = (e) => {
         //scrollToRef.current.scrollIntoView()
-        if(e.code == 'Enter') {
-            if(text.trim() == "clear") {
+        console.log(e)
+        if(e.code == 'Enter' || e.keyCode == 13) {
+            if(text.trim().toLowerCase() == "clear") {
                 setPreviousCommands([])
                 setText("")
                 setCurrentDirectory("amandaortiz $")
-            } else if(text.trim() == "ls") {
+            } else if(text.trim().toLowerCase() == "ls") {
                 if(currentDirectory == "amandaortiz $"){
                     setText("")
                     setPreviousCommands([...previousCommands, {item:'firstLS', directory: currentDirectory}])
@@ -32,12 +33,12 @@ export default function CustomTerminal ({whichWindow}) {
                     setPreviousCommands([...previousCommands, {item:'lsSkills', directory: currentDirectory}])
                 }
 
-            } else if (text.trim() == "cd skills" || text.trim() == "cd skills/") {
+            } else if (text.trim().toLowerCase() == "cd skills" || text.trim().toLowerCase() == "cd skills/") {
                 setText("")
                 setPreviousCommands([...previousCommands, {item:'skills', directory: currentDirectory}])
                 setCurrentDirectory("amandaortiz/skills $")
 
-            } else if (text.trim() == "cat hobbies and interests.txt" ) {
+            } else if (text.trim().toLowerCase() == "cat hobbies and interests.txt" ) {
                 if(currentDirectory=="amandaortiz $"){
                     setText("")
                     setPreviousCommands([...previousCommands, {item:'hobbiesandinterests', directory: currentDirectory}])
@@ -47,12 +48,12 @@ export default function CustomTerminal ({whichWindow}) {
                     setText("")
                 }
                 
-            } else if(text.trim() == "cd"){
+            } else if(text.trim().toLowerCase() == "cd"){
                 setPreviousCommands([...previousCommands, {item:"returnhome",directory: currentDirectory}])
                 setCurrentDirectory('amandaortiz $')
                 setText("")
             } else {
-                if("cat".includes(text.trim())){
+                if("cat".includes(text.trim().toLowerCase())){
                     // show hobbies and interests
                     // or about amanda
                     // or whatever skills options there are 
@@ -66,7 +67,7 @@ export default function CustomTerminal ({whichWindow}) {
         } else if( e.code ==  "Tab") {
             e.preventDefault()
 
-            if("cd ".includes(text.trim())) {
+            if("cd ".includes(text.trim().toLowerCase())) {
                 console.log("here1")
                 // allows user to see available directories
             } else if("cd skills".includes(text)) {
@@ -94,6 +95,24 @@ export default function CustomTerminal ({whichWindow}) {
             }
         }
     }
+    const needHelp = (
+        <div>
+            <h2>Need Help?</h2>
+            <p style={{fontSize: "1.25em", padding: '3px'}}>These are the commands that are usable on my custom terminal:</p>
+            <ul>
+                <li style={{fontSize: "1.25em", padding: '3px', fontFamily:"monospace"}}> <strong>ls : </strong> will show you what is in the directory</li>
+                <li style={{fontSize: "1.25em", padding: '3px', fontFamily:"monospace"}}> <strong>cat [filename] :</strong> Will print what the document has to the terminal</li>
+                <li style={{fontSize: "1.25em", padding: '3px', fontFamily:"monospace"}}> <strong>cd [directoryname]:</strong> cd alone will take you to the top of the folders, while cd with a directory name will take you into that folder </li>
+            </ul>
+            <p style={{fontSize: "1.25em", padding: '3px'}}>Give it a try and let me know how you like it! You can contact me via email at amandaroseortiz42@gmail.com (Contact Page coming soon!)</p>
+        </div>
+    )
+
+    const [openTooltip, setTooltip] = useState(false)
+
+    const handleTooltip = () =>{
+        setTooltip(!openTooltip)
+    }
 
     return (
         <Box
@@ -104,7 +123,7 @@ export default function CustomTerminal ({whichWindow}) {
         mb={'4rem'}
         >
         <Box
-            sx={{ backgroundColor: '#8c8c8c', display: "flex", justifyContent:"space-between"}}
+            sx={{ backgroundColor: '#8c8c8c', display: "flex", justifyContent:"space-between", paddingRight: "25px"}}
             p={'0.5rem'}
             borderRadius={'0.5rem 0.5rem 0 0'}
             fontSize={'1rem'}
@@ -117,7 +136,7 @@ export default function CustomTerminal ({whichWindow}) {
             </div>
             <p style={{marginLeft: '15px', fontFamily: "Courier New, Courier, monospace"}}>What would you like to see?</p>
             </div>
-            <i style={{display: 'flex', alignSelf: 'center'}}>Not sure where to start? Start by running "ls"</i>
+            <Tooltip disableFocusListener title={needHelp} sx={{marginLeft: "50px"}}><p>Need Help?</p></Tooltip>
         </Box>
         <Box
             py={{ xs: '1rem', md: '2rem' }}
@@ -145,6 +164,7 @@ export default function CustomTerminal ({whichWindow}) {
                 <p style={{color: 'rgb(75, 144, 247)', width:"max-content"}}>{currentDirectory}</p>
                 <input className={Style.focusStuff} style={{
                     height: "75%",
+                    width: "100%",
                     flex:"2",
                     background: '#27242f',
                     color: 'white',
