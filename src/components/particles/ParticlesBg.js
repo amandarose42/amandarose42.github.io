@@ -93,7 +93,7 @@ const ParticlesBg = ({ darkMode }) => {
             enable: true,
             outMode: 'bounce',
             random: true,
-            speed: 6,
+            speed: 3,
             straight: false,
             attract: {
               enable: false,

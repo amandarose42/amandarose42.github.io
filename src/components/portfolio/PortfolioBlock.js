@@ -3,9 +3,9 @@ import IconLink from './IconLink';
 import { Box } from '@mui/material';
 
 function PortfolioBlock(props) {
-  const { image, description, live, source, title, noButtons } = props;
+  const { image, description, live, source, title, noButtons, darkmode} = props;
   return (
-    <Box  backgroundColor={'white'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} padding={'15px'} margin={'5px'} borderRadius={'5px'}>
+    <Box  backgroundColor={darkmode ? 'black' :'white'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} padding={'15px'} margin={'5px'} borderRadius={'5px'}>
         {image == 'n/a'
         ? <></>
       : <Box
