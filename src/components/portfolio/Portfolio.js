@@ -3,7 +3,7 @@ import PortfolioBlock from './PortfolioBlock';
 import { Box, Grid } from '@mui/material';
 import { info } from '../../assets/info/Info';
 
-export default function Portfolio() {
+export default function Portfolio({ darkMode }) {
   return (
     <Box>
     <Grid container display={'flex'} justifyContent={'center'} paddingLeft={'125px'} paddingRight={'125px'}>
@@ -16,6 +16,7 @@ export default function Portfolio() {
               source={project.source}
               title={project.title}
               noButtons={project.noButtons}
+              darkmode={darkMode}
             />
           </Grid>
         ))}
