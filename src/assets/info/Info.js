@@ -47,7 +47,7 @@ export const info = {
     },
   ],
   bio: `Hello! I'm Amanda Ortiz. I studied Computer Science at Cal Poly Humboldt and graduated in December of 2020. Currently, I am working 
-    as a Network Technician I at Wadena County Courthouse. My main goal is to pursue a career in Software Development. I have previous experience as
+    as a Network Technician I/Fullstack Developer at Wadena County Courthouse. My main goal is to pursue a career in Software Development. I have previous experience as
     a FullStack Developer, working at Biztech. I enjoy building applications and learning new things and technologies. I recently relocated from Arcata, CA to Staples, MN.`,
   skills: {
     // you dont havew to strictly follow the 'languages', 'frameworks', 'databases', 'cloudServices', and 'tools' categories. You can add your own if you'd like.
@@ -73,11 +73,11 @@ export const info = {
   },
   hobbies: [
     {
-      label: 'Language Learning, Currently learning Norwegian',
+      label: 'Language Learning, Currently learning Norwegian on Duolingo',
       emoji: '🌐',
     },
     {
-      label: 'Reading Books, Currently reading ACOTAR Series (Book 3)',
+      label: 'Reading Books',
       emoji: '📖',
     },
     {
