@@ -112,19 +112,7 @@ export const info = {
       live: null, //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: '', // this should be a link to the **repository** of the project, where the code is hosted.
       image: '',
-    },*/
-    {
-      title: 'Knowledge Base for Biztech',
-      description: "Local machine setup on the office network that ran a website that consists of all necessary information for current and previous projects in the Development Department",
-      image: 'n/a',
-      noButtons: true
-    },
-    {
-      title: 'Internal Arcata Ramada',
-      description: "Basic React Site, hosted on Amplify, for Arcata Hotel Employees to have access to special rates, do not rent list, and a cleaning list. People on the do not rent list can be added, removed, and updated.",
-      image: 'n/a',
-      noButtons: true
-    },/*
+    },*//*
     {
       title: 'MapIt Humboldt: Bias Reporting',
       description:'The MapIt Humboldt Mobile App & Website allows members of the community to report and identify places that are welcoming and safe as well as places where people reported not feeling safe.',
@@ -135,14 +123,26 @@ export const info = {
     {
       title: 'Map IT Humboldt: Bias Reporting',
       description: "Included One Public Website, An Admin Site, and A Mobile Application. The Public Website was created using WordPress on LightSail and React for the forms. The Mobile app was created in React Native and added to both Google Play Store and Apple Store. Both the mobile application and the public website were created allow the community to view previous reported submissions and report their own submissions on bias and discrimination happening in Humboldt County. The Admin Site was created using React and hosted on Amplify, and is used for allowing admins of the group to view submissions from the public, and verify/deny those submissions by connecting with any local businesses involved.",
-      image: 'n/a',
+      image: './mapitmobile.png',
       noButtons: true,
       //image: './mapit-screenshots.png'
     },
     {
+      title: 'North Fork Lumber Saw Data Collection - Admin',
+      description: "Worked with a local mill to create an application that Saw Filers can use to track productivity of saws and discrepancies in saw maintenance. Included: A 'greasboard' that keeps track of saws that are actively being used, tracks their usage and maintenance, and allows to track which Saw Filer is currently active; an admin side that allows for reporting and CRUD on Saw Filers, Saws, and Common Variables; other forms that include information that the lumber mills use to track discrepancies in saw maintenance",
+      image: './nfl-admin-1.png',
+      noButtons: true
+    },
+    {
       title: 'North Fork Lumber Saw Data Collection',
       description: "Worked with a local mill to create an application that Saw Filers can use to track productivity of saws and discrepancies in saw maintenance. Included: A 'greasboard' that keeps track of saws that are actively being used, tracks their usage and maintenance, and allows to track which Saw Filer is currently active; an admin side that allows for reporting and CRUD on Saw Filers, Saws, and Common Variables; other forms that include information that the lumber mills use to track discrepancies in saw maintenance",
-      image: 'n/a',
+      image: './nfl-saw-forms.png',
+      noButtons: true
+    },
+    {
+      title: 'Internal Arcata Ramada',
+      description: "Basic React Site, hosted on Amplify, for Arcata Hotel Employees to have access to special rates, do not rent list, and a cleaning list. People on the do not rent list can be added, removed, and updated.",
+      image: './arcataramada.png',
       noButtons: true
     },
     {
@@ -154,6 +154,12 @@ export const info = {
     {
       title: 'SRM Quicklinks',
       description: "Simple WordPress site hosted on the local network that consists of important links, documents, and contacts for all SRM Employees.",
+      image: 'n/a',
+      noButtons: true
+    },
+    {
+      title: 'Knowledge Base for Biztech',
+      description: "Local machine setup on the office network that ran a website that consists of all necessary information for current and previous projects in the Development Department",
       image: 'n/a',
       noButtons: true
     },
